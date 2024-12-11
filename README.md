@@ -20,7 +20,7 @@ This project uses the package Django.
 1) Clone this project
 Install the required Python packages using pip
 2) ```pip install -r requirements.txt ```
-Setting up the Spotipy API
+### Setting up the Spotipy API
 3) Create a new account or log into https://developers.spotify.com/
 4) Go to the Dashboard, create a new app
 5) Set the redirect url on the app you just created to http://127.0.0.1:8000/spotify/callback/
