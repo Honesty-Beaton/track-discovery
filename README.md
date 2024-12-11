@@ -23,7 +23,7 @@ Install the required Python packages using pip
 3) Set up the database using ```python manage.py makemigrations```
 4) Apply database changes using ```python manage.py migrate``` 
 5) Enable access to the Django admin panel by creating a superuser account: ```python manage.py createsuperuser```
-6) Run the development server using ```python manage.py runserver```
+6) Run the development server using ```python manage.py runserver```. If this does not work, ensure you are in the trackdiscovery directory
 7) Head to the index page using the localhost/ or the admin page using /admin/
 
 ### Dependencies
@@ -40,7 +40,7 @@ python manage.py runserver
 
 ## Output
 
-A simple Django-based web application for creating recipes.
+A Django-based web application where users can guess the artist from song snippet or guess the artist from an album cover!
 
 ## Authors
 
