@@ -37,6 +37,7 @@ SPOTIPY_CLIENT_SECRET
 pip  install -r requirements.txt
 
 ```
+Spotipy API set up, ID and Client Secret
 
 ### Executing program
 Run the development server using 
