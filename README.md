@@ -10,8 +10,8 @@ In this project, I utilize Django and the Spotipy API to create a Track Discover
 
 ## Features
  * User authentication (login, register, logout) 
- * 
- * Admin panel 
+ * Guess the Album Cover or Song Snippet
+ * Easy, Normal and Hard Difficulties
 
 
 This project uses the package Django.
@@ -24,7 +24,7 @@ Install the required Python packages using pip
 4) Apply database changes using ```python manage.py migrate``` 
 5) Enable access to the Django admin panel by creating a superuser account: ```python manage.py createsuperuser```
 6) Run the development server using ```python manage.py runserver```
-7) Head to the index page using the localhost/trackdiscovery/ or the admin page using /admin/
+7) Head to the index page using the localhost/ or the admin page using /admin/
 
 ### Dependencies
 ```
