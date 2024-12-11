@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #BB86FC; /* Light purple for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7731c8; /* Darker purple on hover */
+}
+
+h1, h2, h3 {
+    color: #FFFFFF; /* White for headings */
+    text-align: center;
+}
+
+header, footer {
+    background-color: #1F1F1F; /* Dark gray for header and footer */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #6200EE; /* Purple button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3700B3; /* Darker purple on hover */
+}
+
+input, select {
+    background-color: #333333; /* Dark input background */
+    color: white;
+    border: 1px solid #444444; /* Border to make inputs visible */
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #BB86FC; /* Light purple focus border */
+}
+
+/* Forms */
+form {
+    background-color: #1D1D1D; /* Dark background for forms */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    color: #BBBBBB; /* Light gray for labels */
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input[type="text"], form select {
+    margin-bottom: 16px; /* Space between input fields */
+}
+
+/* Cards / Panels */
+.card {
+    background-color: #1F1F1F;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+.card h3 {
+    color: #BB86FC;
+}
+
+.card p {
+    color: #E0E0E0;
+}
+
+/* Modal / Error Message */
+.modal {
+    background-color: #333333;
+    color: #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.modal button {
+    background-color: #BB86FC;
+}
+
+/* Specific pages */
+.page-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    font-size: 12px;
+    color: #BBBBBB;
+}
+
+.logout-btn {
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

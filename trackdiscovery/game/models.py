@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 class GameSession(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     difficulty = models.CharField(max_length=10, choices=[('Easy', 'Easy'), ('Normal', 'Normal'), ('Hard', 'Hard')])
+    gameMode = models.CharField(max_length=15, choices=[('Song Snippet', 'Song Snippet'), ('Album Cover', 'Album Cover')])
     score = models.IntegerField(default=0)
     createdAt = models.DateTimeField(auto_now_add=True)
 

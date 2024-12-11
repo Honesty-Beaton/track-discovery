@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Track Discovery{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'game:startGame' %}">
+            <h1>Track Discovery</h1>
+        </a>
+        <nav>
+            {% if user.is_authenticated %}
+                <span>Hello, {{ user.username }}!</span>
+                <form method="post" action="{% url 'game:logout' %}">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+                </form>
+            {% else %}
+                <a href="{% url 'game:login' %}">Login | </a>
+                <a href="{% url 'game:register' %}"> Register</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>Created by: Honesty Beaton</p>
+    </footer>
+</body>
+</html>

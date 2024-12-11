@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Start Game{% endblock %}
+
+{% block content%}
+<h2>Start Game</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="difficulty">Select Difficulty:</label>
+    <select name="difficulty" id="difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Normal">Normal</option>
+        <option value="Hard">Hard</option>
+    </select>
+
+    <label for="gameMode">Select Game Mode:</label>
+    <select name="gameMode" id="gameMode">
+        <option value="Song Snippet">Song Snippet</option>
+        <option value="Album Cover">Album Cover</option>
+    </select>
+
+    <button type="submit">Start Game</button>
+</form>
+{% endblock %}

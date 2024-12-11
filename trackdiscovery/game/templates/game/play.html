@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Play Game{% endblock %}
+{% block content%}
+<h1>Guess the Artist By The {{ game_mode }}</h1>
+{% if game_mode == "Song Snippet" %}
+    <audio controls>
+        <source src="{{ question.snippetURL }}" type="audio/mpeg">
+    </audio>
+{% else %}
+    <div class="text-center">
+        <img src="{{ question.snippetUrl }}" alt="Album Cover" width="300">
+    </div>
+
+{% endif %}
+<form method="post">
+    {% csrf_token %}
+    <label for="answer">Your Answer:</label>
+    <input type="text" name="answer" placeholder="Your answer" id="answer" required>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

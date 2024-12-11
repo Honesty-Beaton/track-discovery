@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title%}Game Results{% endblock %}
+
+{% block content %}
+<h1>Game Results </h1>
+<p>Score: {{ session.score }}</p>
+<p>Difficulty: {{ session.difficulty }}</p>
+<p>Game Mode: {{ session.gameMode }}</p>
+<a href="{% url 'game:startGame' %}">Play Again</a>
+{% endblock %}
