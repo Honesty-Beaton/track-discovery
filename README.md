@@ -20,11 +20,17 @@ This project uses the package Django.
 1) Clone this project
 Install the required Python packages using pip
 2) ```pip install -r requirements.txt ```
-3) Set up the database using ```python manage.py makemigrations```
-4) Apply database changes using ```python manage.py migrate``` 
-5) Enable access to the Django admin panel by creating a superuser account: ```python manage.py createsuperuser```
-6) Run the development server using ```python manage.py runserver```. If this does not work, ensure you are in the trackdiscovery directory
-7) Head to the index page using the localhost/ or the admin page using /admin/
+Setting up the Spotipy API
+3) Create a new account or log into https://developers.spotify.com/
+4) Go to the Dashboard, create a new app
+5) Set the redirect url on the app you just created to http://127.0.0.1:8000/spotify/callback/
+6) Get your ID and Secret Key, put these variables in settings.py in the variables SPOTIPY_CLIENT_ID and
+SPOTIPY_CLIENT_SECRET
+7) Set up the database using ```python manage.py makemigrations```
+8) Apply database changes using ```python manage.py migrate```
+9) Enable access to the Django admin panel by creating a superuser account: ```python manage.py createsuperuser```
+10) Run the development server using ```python manage.py runserver```. If this does not work, ensure you are in the trackdiscovery directory 
+11) Head to the index page using the localhost/ or the admin page using /admin/
 
 ### Dependencies
 ```

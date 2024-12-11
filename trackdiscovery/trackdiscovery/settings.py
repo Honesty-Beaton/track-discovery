@@ -15,8 +15,8 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SPOTIPY_CLIENT_ID = 'd2203cb9b40445838e1e017b90af681e'
-SPOTIPY_CLIENT_SECRET = '400273aab4f0473a9b0cb0a469ece4ac'
+SPOTIPY_CLIENT_ID = ''
+SPOTIPY_CLIENT_SECRET = ''
 SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:8000/spotify/callback/'
 
 # Quick-start development settings - unsuitable for production
